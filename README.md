@@ -1,6 +1,9 @@
 # overseas-purchase
 크롤링을 이용한 해외직구 프로젝트
 
+사용언어 : python
+프레임워크 : selenium
+
 * Site
  1. Amazon
  2. AliExpress
