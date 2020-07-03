@@ -155,8 +155,8 @@ class Alie:
         pay_cvc.click()
         pay_cvc.send_keys("403")
         self.driver.find_element_by_xpath("//div[@class='save']").find_element_by_tag_name("button").click()
-        time.sleep(100)
-        # self.drvier.find_element_by_xpath("//div[@id='side']").find_elements_by_xpath("//div[@id='price-overview']").find_element_by_xpath("//div[@class='next-loading next-loading-inline loading']").find_element_by_xpath("//div[@class='order-btn-holder']").find_element_by_tag_name("button").click()
+        
+        self.drvier.find_element_by_xpath("//div[@id='side']").find_elements_by_xpath("//div[@id='price-overview']").find_element_by_xpath("//div[@class='next-loading next-loading-inline loading']").find_element_by_xpath("//div[@class='order-btn-holder']").find_element_by_tag_name("button").click()
         # 마지막 결제 버튼
 if __name__ == "__main__":
     # addr = input("주소를 입력하세요 : ")
@@ -164,9 +164,5 @@ if __name__ == "__main__":
     # name = input("이름을 입력해주세요 : ")
     # clearance = input("통관번호를 입력하세요 : ")
     test = Alie()
-    # test.url_page("https://ko.aliexpress.com/item/33055472118.html?spm=a2g0o.productlist.0.0.68635bb7AuBrWZ&algo_pvid=f623c4a4-f07d-4423-b675-f4035a286ef6&algo_expid=f623c4a4-f07d-4423-b675-f4035a286ef6-1&btsid=a42a5534-9e5b-4709-a9bf-2a15decd9c18&ws_ab_test=searchweb0_0,searchweb201602_8,searchweb201603_52")
     test.url_page("https://ko.aliexpress.com/item/4000052480223.html?spm=a2g01.12597576.p99adbb.13.d8923e7dnko4KV&gps-id=7316167&scm=1007.19881.118560.0&scm_id=1007.19881.118560.0&scm-url=1007.19881.118560.0&pvid=48bc1057-80cd-42b3-9a13-ddc87c7b2ab5")
-    # test.login_Alie()
-    # test.change_address(addr)
-    # test.pay_info()
-    # test.shipping(name, ph_num, clearance)
+
